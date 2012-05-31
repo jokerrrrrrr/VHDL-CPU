@@ -1,7 +1,0 @@
-xst -intstyle ise -ifn "E:/code/VHDL-CPU/VHDL-CPU/memory_block.xst" -ofn "E:/code/VHDL-CPU/VHDL-CPU/memory_block.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 memory_block.ngc memory_block.ngd  
-map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o memory_block_map.ncd memory_block.ngd memory_block.pcf 
-xst -intstyle ise -ifn "C:/Users/LeonBondeLarsen/Desktop/VHDL-CPU/memory_block.xst" -ofn "C:/Users/LeonBondeLarsen/Desktop/VHDL-CPU/memory_block.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 memory_block.ngc memory_block.ngd  
-map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o memory_block_map.ncd memory_block.ngd memory_block.pcf 
-map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o memory_block_map.ncd memory_block.ngd memory_block.pcf 
