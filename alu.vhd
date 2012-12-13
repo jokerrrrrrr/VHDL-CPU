@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------
--- Digitalteknik portefølje 2
+-- Digitalteknik portefï¿½lje 2
 -- VHDL-CPU
 -- Af Kent Stark Olsen og Leon Bonde Larsen
 ----------------------------------------------------------------------------------
@@ -15,7 +15,7 @@ entity data_path is
 				DIN: 			in 	std_logic_vector( (data_bus_width - 1) downto 0 );	
 				DOUT: 		out 	std_logic_vector( (data_bus_width - 1) downto 0 );
 				CLK:			in		std_logic;
-				INSTRUCTION:in		std_logic;
+				INSTRUCTION:in		std_logic_vector(1 downto 0)
 			);
 end data_path;
 
@@ -34,7 +34,7 @@ alu: process( CLK , CS , OPERAND , INSTRUCTION , DIN ) is
 				latched_operand <= registers( conv_integer( OPERAND ) ); 
 			when "01" =>
 			   --add latched operand to OPERAND
-				latched operand <= latched operand + registers( conv_integer( OPERAND ) )
+				latched_operand <= latched_operand + registers( conv_integer( OPERAND ) )
 			when "10" =>
 				--put OPERAND on DOUT
 				DOUT <= registers( conv_integer( OPERAND ) );
